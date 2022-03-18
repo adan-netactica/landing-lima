@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto', sans-serif, sans-serif, arial, verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 17px;
 }
@@ -14,7 +14,22 @@
     align-items: center;
   
 }
+.header__logo {
+    align-items: center;
+    display: flex;
+}
+.header__logo p {
+    margin: 0;
+}
+.header__logo>img {
+    width: 15px;
+    display: inline;
+    object-fit: contain;
+}
 
+.header__logo b{
+    font-weight: 600;
+}
 .col-md-4 p{
     font-size: 21px;
 
@@ -38,6 +53,7 @@
     display: flex;
     list-style: none;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .list-nav-li{
@@ -87,17 +103,29 @@ h5{
 
 .seccion1{
     display: flex;
-    margin: 1rem;
+    align-items: center;
+    height: 50%;
+
 }
 
 .seccion1-icon{
     margin-right: 1rem;
 }
+.seccion1-icon+div h5{
+    font-weight: 500;
+    font-size: 20px;
+    width: max-content;
+}
+.seccion1-icon+div p {
+    width: max-content;
+}
+
 
 #row-center{
     background: linear-gradient(to right, #FF6114, #FF945A);;
     border-radius: 5px;
     color: white;
+
 }
 
 #promociones{
@@ -625,6 +653,7 @@ footer{
     #row-center {
         display: block;
     }
+
     .item-2{
         grid-column: 1 / 5;
         grid-row: 3 / 5;
@@ -681,9 +710,7 @@ footer{
     #id-col-sm-6{
         margin-top: 25px;
     }
-    .seccion1 {
-        padding-top: 1rem;
-    }
+
     
 }
 
@@ -717,4 +744,27 @@ footer{
     background:white;
     border: 5px solid black;
     text-align:center;
+}
+
+div#row-center>div {
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+@media (min-width:1024px) {
+    #row-center{
+        min-height: 200px;
+        width: max-content;
+    }
+    div#topHeader::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #9e9e9e;
+        position: absolute;
+        left: 0;
+        top: 66px;
+    }
 }
