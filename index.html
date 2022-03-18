@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100,300;400;500&display=swap" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="shortcut icon" href="https://turismoi.pe/assets/favicon-43c629992f87fcf7bcbb0707cafec846.ico" type="" />
         <link rel="stylesheet" href="style.css" />
@@ -14,8 +18,8 @@
         <div id="topHeader">
             <div class="container">
                 <div class="header">
-                    <div class="col-md-4">
-                        <p>>Visita <b>Turismoi.pe</b></p>
+                    <div class="col-md-4" id="visit-turism">
+                        <div><p style="color: #FD6E15;">></p></div><p>Visita <b>Turismoi.pe</b></p>
                     </div>
                     <div class="col-md-4 .ms-auto">
                         <ul class="buttonGroup">
@@ -28,7 +32,9 @@
                         </ul>
                     </div>
                 </div>
+                
             </div>
+            <div id="line"></div>
             <div class="container">
                 <nav id="bg-light" class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
@@ -95,7 +101,9 @@
         <div id="container-grid" class="container">
             <section class="section-promos">
                 <div id="promociones">
-                    <h1>Promociones para ti</h1>
+                    <div class="plus-bold">
+                        <p>Promociones para ti</p>
+                    </div>
                     <p>Navega entre los tours y elige el que más te interese. Posteriormente podrás canjear alguno de los siguientes cupones dependiendo del monto total de tu compra.</p>
                     <table>
                         <thead>
@@ -183,7 +191,9 @@
                 <section class="section-promos">
                     <div class="titles">
                         <div>
-                            <h1>¿Aún tienes dudas sobre cómo aplicar tu cupón?</h1>
+                            <div class="plus-bold">
+                                <p>¿Aún tienes dudas sobre cómo aplicar tu cupón?</p>
+                            </div>
                             <p>Solo tienes que seguir los pasos anteriores y al ﬁnal ingresar el código del cupón correspondiente.</p>
                         </div>
                         <a href="https://turismoi.pe/tours-y-paquetes-turisticos-peru/en-lima">
@@ -195,10 +205,10 @@
                     <div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <img src="IMG/tab1.png" class="img-col-sm-6" />
+                                <img src="IMG/tab1.png" class="img-col-sm-6" width="100%">
                             </div>
                             <div class="col-sm-6" id="id-col-sm-6">
-                                <img src="IMG/tab2.png" class="img-col-sm-6" />
+                                <img src="IMG/tab2.png" class="img-col-sm-6" width="100%">
                             </div>
                         </div>
                     </div>
@@ -207,7 +217,7 @@
         </div>
         <div class="container" id="tours-populars">
             <section class="section-promos">
-                <div class="titles">
+                <div class="titles3">
                     <div class="tours-populares">
                         <h1>Tours populares</h1>
                     </div>
@@ -285,7 +295,7 @@
         </div>
         <footer>
             <div class="footer">
-                ©2022 Turismoi.pe. Todos los derechos reservados.
+                © 2022 Turismoi.pe. Todos los derechos reservados.
             </div>
         </footer>
     </body>
