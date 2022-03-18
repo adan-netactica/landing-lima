@@ -13,6 +13,8 @@
   
 }
 
+
+
 #visit-turism{
     display: flex;
 }
@@ -79,6 +81,11 @@ h5{
     grid-column: 1 / 14;
     grid-row: 1 / 12;
     
+}
+
+.section-grid {
+    background-image: url("IMG/graph.png");
+    height: 520px;
 }
 
 
